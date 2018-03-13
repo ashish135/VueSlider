@@ -46,8 +46,6 @@ export default {
       this.currentIndex--
     },
     nextSlide() {
-      console.log(this.currentIndex);
-      console.log(this.slides.length-1);
       if (this.currentIndex == this.slides.length-1) {
         return
       }
@@ -55,16 +53,23 @@ export default {
     },
     goToSlide(i) {
       this.currentIndex = i
+    },
+    loadData () {
+      if (this.currentIndex === 4) {
+        this.currentIndex = 0
+      } else {
+      this.currentIndex++
+    }
     }
   },
   components:{
     Slide
   },
   mounted () {
-    console.log(this.currentIndex);
     let singleWidth = this.$el.clientWidth/this.itemsPerSlide
     this.singleWidth = singleWidth
     this.innerWidth = singleWidth * this.slides.length
+    setInterval(this.loadData, 3000)
   }
 }
 </script>
