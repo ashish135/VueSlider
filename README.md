@@ -1,6 +1,6 @@
-# slider
+# Vue carousel Slider
 
-> Vue carao[3[3~ousel slider By Ashish
+> Vue carousel slider
 
 ## Build Setup
 
@@ -19,3 +19,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Final Output
+<img src="Vue Slider.png" />
