@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <div class="slides-inner" v-bind:style="{width: innerWidth+'px', marginLeft:- +slidesInnerMarginLeft +'px' }">
+    <div class="slides-inner" v-bind:style="{width: innerWidth+'px', marginLeft:- +slidesInnerMarginLeft +'px', visibility: active }">
         <Slide v-bind:style="{width: singleWidth+'px' }" v-for="slide in slides" v-bind:slide="slide"></Slide>
     </div>
     <ul class="pagination">
@@ -27,6 +27,7 @@ export default {
       itemsPerSlide: 1,
       innerWidth: 0,
       bullet:0,
+      active: 'visible',
       singleWidth: 0,
       currentIndex: 0,
       nextSlideIndex: 0,
@@ -56,7 +57,9 @@ export default {
     },
     loadData () {
       if (this.currentIndex === 4) {
+        this.active = 'hidden'
         this.currentIndex = 0
+        this.active = 'visible'
       } else {
       this.currentIndex++
     }

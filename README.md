@@ -1,6 +1,6 @@
 # Vue carousel Slider
 
-> Vue carousel slider
+> Vue carousel slider with autoslide.
 
 ## Build Setup
 
