@@ -24,14 +24,19 @@ export default {
                 {src:'static/images/slide4.jpg', alt:'Slide 4'},
                 {src:'static/images/slide5.jpg', alt:'Slide 5'}
       ],
-      itemsPerSlide: 1,
       innerWidth: 0,
       bullet:0,
       active: 'visible',
       singleWidth: 0,
+      InnerMarginLeft:0,
       currentIndex: 0,
       nextSlideIndex: 0,
       prevSlideIndex: 0
+    }
+  },
+  props:{
+    itemsPerSlide: {
+      default: 1,
     }
   },
   computed : {

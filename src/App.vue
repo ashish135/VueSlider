@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png" width="80">
-    <Slider/>
+    <Slider :itemsPerSlide="2" />
   </div>
 </template>
 
