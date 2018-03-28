@@ -10,6 +10,9 @@
 			return {}
 		},
 		props: ['slide'],
+		created () {
+			//console.log(this.$parent.$el);
+		}
 	}
 </script>
 

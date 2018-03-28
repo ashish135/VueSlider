@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" width="80">
-    <Slider :itemsPerSlide="2" />
+       <Slider :itemsPerSlide="2" :autoplay="10000" :bulletPoint="true"/>
   </div>
 </template>
 
